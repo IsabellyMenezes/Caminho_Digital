@@ -103,7 +103,7 @@ main {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
     flex-direction: row;
 }
 
@@ -112,19 +112,18 @@ main > div {
     flex-direction: column;
     align-items: center;
 }
-
 main > div > h1{
-  padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+    text-shadow: 0px 1px 1px black;
 }
 main > div > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     padding-bottom: 30px;
 }
-main > .imagem > img{
-    width: 500;
-}
-
 .texto {
-    margin-left: 100px; 
+    margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
     text-align: center;
     display:flex ;
     align-items: center;
@@ -132,69 +131,69 @@ main > .imagem > img{
     height: 400px;
     width: 800px;
     font-size: 16px;
-    color: #e87d0d;
     
 }
-
 .imagem {
-    margin-right: 100px; 
+    margin-right: 100px; /* Ajusta a imagem para a extremidade direita */
     margin-left: 10px;
     display:flex ;
     align-items: center;
     justify-content: center;
-    height: 400px;
     width: 400px;
-    
+    height: 400px;
 }
-main > div > img{
-width: 300px;
-border-radius: 50px;
-
+#img1{
+    width: 400px;
 }
 
 @media (max-width:1020px){
    
     main > div{
         margin-bottom: 20px;
-    }
-    main > div > img{
-        width: 250px;
-        
-        
-        }        
+    }   
     .texto {
         margin: 0 10px;
         text-align: center;
         height: 400px;
         width: 700px;
         font-size: 15px;
-     }
-     
-     .imagem {
-        margin-right: 10px; 
+        margin-right: 25px;
+    }
+         
+    .imagem {
+        margin-right: 20px; /* Ajusta a imagem para a extremidade direita */
         flex-direction: row;
         justify-content: right;
-        width: 250px;
+        width: 400px;
+    }
+    #img1{
+        width: 350px;
     }
 }
-@media (max-width:650px){
-   
+@media (max-width:726px){
+       
     main {
         flex-direction: column;
         height: 600px;
     }
     main > div > h2{
-       margin: 0 10px;
-      
-        }
-         
+        margin: 0 10px;
+    }
+             
     .texto {
         width: 500px;
-       
-        
-     }
-     
-   
+    }
+    .imagem{
+        align-items: center;
+        display: flex;
+        margin-right: 50px;
+    }
+    main > .imagem > #img1{
+        width: 250px;
+        background-color: #265787;
+        border-radius: 20px;
+        display: flex;
+    }
 }
 footer{
     background-color: white;
@@ -250,7 +249,7 @@ footer > nav > div > a >img{
         
     }
 }
-@media (max-width: 680px) {
+@media (max-width: 726px) {
     footer{
         height: 800px;
     }
@@ -308,13 +307,13 @@ footer > nav > div > a >img{
 }
 @media (max-width:1020px){
    
-    main > div{
-        margin-bottom: 20px;
-    }
-    main > div > img{
-        width: 250px;
-        
-        
+main > div{
+    margin-bottom: 20px;
+}
+main > div > img{
+    margin-right: 50px;
+    width: 100px;
+    height: auto;
 }        
 .frase {
     margin: 0 10px;
@@ -322,17 +321,31 @@ footer > nav > div > a >img{
     height: 400px;
     width: 700px;
     font-size: 15px;
+    display: flex;
+    margin-left: 40px;
+    
 
 }
-
-     
+.estudante{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*alinhar vesticalmente*/
+ }
+.foto{
+    width: 100px;
+    display: flex;
+    margin-right: 60px;
+    
+}
 .estudante > .foto > img{
     align-items: center;
     margin-left: 10px;
     flex-direction: row;
     justify-content: right;
-    width: 550px;
+    width: 400px;
     margin-left: 20px;
+    
 }
 .frase > h1{
     padding-bottom: 0px;
@@ -344,24 +357,104 @@ footer > nav > div > a >img{
     padding-bottom: 5px;
 }
 }
-@midia(max-width:712){
-    .frase{
-        width: 200px;}
-}
-@media(max-width:632px){
-    .estudante{
-        height: 600px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .frase{
-        width: 350px;
 
+@media(max-width:726px){
+.estudante{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.frase{
+    width: 300px;
+
+}
+.estudante > .foto > img{
+    width: 200px;
+    background-color: #e87d0d;
+    border-radius: 50px;
+}
+}
+main {
+    height: 450px;
+    background-color:rgba(255, 255, 255, 0.507);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o conteúdo para ocupar todo o espaço */
+    flex-direction: row;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto2 {
+    margin-left: 100px; /* Ajusta o texto para a extremidade esquerda */
+    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+    font-size: 16px;
+    color: #265787;
+    
+}
+.imagem2 {
+    margin-right: 100px; /* Ajusta a imagem para a extremidade direita */
+    margin-left: 10px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+#imge2{
+    width: 400px;
+}
+
+@media (max-width:1020px){
+    .texto2 {
+        margin: 0 10px;
+        text-align: center;
+        height: 400px;
+        width: 700px;
+        font-size: 15px;
+        margin-right: 25px;
     }
-    .estudante > .foto > img{
-        width: 250px;
+         
+    .imagem2 {
+        margin-right: 20px; /* Ajusta a imagem para a extremidade direita */
+        flex-direction: row;
+        justify-content: right;
+        width: 400px;
+    }
+    #imge2{
+        width: 350px;
+    }
+}
+@media (max-width:726px){
+       
+    main {
+        flex-direction: column;
+        height: 600px;
+        
+    }
+             
+    .texto2 {
+        width: 500px;
+    }
+    .imagem2{
+        align-items: center;
+        display: flex;
+        margin-right: 50px;
+    }
+    main > div > img>{
+        width: 300px;
+        margin-left: 60px;
     }
 }
 #final{
