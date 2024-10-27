@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgrey;
+}
+
+header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+header > nav {
+    display: flex;
+    align-items: center; 
+}
+
+header > nav > img {
+    width: 200px; 
+    margin-right: 200px;
+    
+}
+
+header > nav > a {
+    color: #265787;
+    text-decoration: none;
+    margin-right: 150px; 
+    font-size: 20px;
+
+}
+header > nav > a:hover{
+    color: #e87d0d;
+}
+.botao{
+    color: rgba(255, 255, 255, 0.938);
+    background-color: #265787;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 10px  ;
+    text-decoration: none;
+}
+.botao:hover{
+    color: white;
+    background-color: #e87d0d;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    transform: scale(1.1);
+}
+/* Media Query para telas menores */
+@media (max-width: 1400px) {
+    header > nav > img {
+        width: 150px; 
+        margin-right: 30px; 
+        margin-left: 20px;
+    }
+
+    header > nav > a {
+        margin-right: 30px;
+    }
+    .botao{
+        margin-left: 0px;
+        padding: 7px;
+    }
+}
+
+@media (max-width: 650px) {
+    header > nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        width: 100%; 
+       
+    }
+
+    header > nav > img {
+        
+        margin-right: 15px;
+        margin-left: 1px;
+        width: 120px;
+    }
+
+    header > nav > a {
+        margin-right: 15px;
+        font-size: 18px;
+
+    }
+    .botao{
+        margin-left: 0px;
+        font-size: 17px;
+        text-align: center;
+        padding: 7px;
+        
+    }
+
+}
+main {
+    height: 450px;
+    background-color:rgba(255, 255, 255, 0.507);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div > h1{
+  padding-bottom: 40px;
+}
+main > div > h2{
+    padding-bottom: 30px;
+}
+main > .imagem > img{
+    width: 500;
+}
+
+.texto {
+    margin-left: 100px; 
+    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+    font-size: 16px;
+    color: #e87d0d;
+    
+}
+
+.imagem {
+    margin-right: 100px; 
+    margin-left: 10px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    
+}
+main > div > img{
+width: 300px;
+border-radius: 50px;
+
+}
+
+@media (max-width:1020px){
+   
+    main > div{
+        margin-bottom: 20px;
+    }
+    main > div > img{
+        width: 250px;
+        
+        
+        }        
+    .texto {
+        margin: 0 10px;
+        text-align: center;
+        height: 400px;
+        width: 700px;
+        font-size: 15px;
+     }
+     
+     .imagem {
+        margin-right: 10px; 
+        flex-direction: row;
+        justify-content: right;
+        width: 250px;
+    }
+}
+@media (max-width:650px){
+   
+    main {
+        flex-direction: column;
+        height: 600px;
+    }
+    main > div > h2{
+       margin: 0 10px;
+      
+        }
+         
+    .texto {
+        width: 500px;
+       
+        
+     }
+     
+   
+}
+footer{
+    background-color: white;
+    height: 400px;
+}
+footer > nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+footer > nav > div > a{
+    background-color: #265787;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 270px;
+    width: 270px;
+    text-decoration: none;
+    margin: 20px 70px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+footer > nav > div > a >img{
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.livro :hover{
+    background-color: rgba(255, 255, 255, 0.267);
+    transition: 0.4s;
+    color: #265787;
+}
+@media(max-width:1000px) {
+    footer{
+        height: 250px;
+    }
+    footer > nav > div > a > img {
+        width: 100px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    footer > nav > div > a {
+        height: 200px;
+        width: 200px;
+        margin: 20px 10px;
+        
+       
+        
+    }
+}
+@media (max-width: 680px) {
+    footer{
+        height: 800px;
+    }
+    footer > nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > nav > div > a {
+        height: 230px; 
+        width: 230px; 
+        margin: 10px 0; 
+    }
+
+    footer > nav > div > a > img {
+        width: 100px; 
+        margin-bottom: 10px; 
+    }
+}
+.estudante{
+    height: 450px;
+    background-color:white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row;
+    margin-top: 10px;
+}
+.foto{
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 10px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+}
+.estudante > .foto > img{
+    width: 450px;
+}
+.frase{
+   
+    margin-right: 100px;
+    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+    font-size: 16px;
+    color: #265787;
+}
+@media (max-width:1020px){
+   
+    main > div{
+        margin-bottom: 20px;
+    }
+    main > div > img{
+        width: 250px;
+        
+        
+}        
+.frase {
+    margin: 0 10px;
+    text-align: center;
+    height: 400px;
+    width: 700px;
+    font-size: 15px;
+
+}
+
+     
+.estudante > .foto > img{
+    align-items: center;
+    margin-left: 10px;
+    flex-direction: row;
+    justify-content: right;
+    width: 550px;
+    margin-left: 20px;
+}
+.frase > h1{
+    padding-bottom: 0px;
+    font-size: 24px;
+}
+    .frase > h2{
+    padding-top: 8px;
+    font-size: 21.5px;
+    padding-bottom: 5px;
+}
+}
+@midia(max-width:712){
+    .frase{
+        width: 200px;}
+}
+@media(max-width:632px){
+    .estudante{
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .frase{
+        width: 350px;
+
+    }
+    .estudante > .foto > img{
+        width: 250px;
+    }
+}
+#final{
+    height: 20px;
+    background-color: white;
+}
