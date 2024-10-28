@@ -368,7 +368,7 @@ main > div > img{
 }
 .frase{
     width: 300px;
-
+    margin-left: 20px;
 }
 .estudante > .foto > img{
     width: 200px;
@@ -376,7 +376,7 @@ main > div > img{
     border-radius: 50px;
 }
 }
-main {
+.main2 {
     height: 450px;
     background-color:rgba(255, 255, 255, 0.507);
     text-align: center;
@@ -401,6 +401,7 @@ main > div {
     width: 800px;
     font-size: 16px;
     color: #265787;
+
     
 }
 .imagem2 {
@@ -438,9 +439,9 @@ main > div {
 }
 @media (max-width:726px){
        
-    main {
+    .main2 {
         flex-direction: column;
-        height: 600px;
+        height: 700px;
         
     }
              
@@ -452,9 +453,11 @@ main > div {
         display: flex;
         margin-right: 50px;
     }
-    main > div > img>{
+    #imge2{
+        background-color: #265787;
+        border-radius: 50px;
         width: 300px;
-        margin-left: 60px;
+        margin-left: 10px;
     }
 }
 #final{
