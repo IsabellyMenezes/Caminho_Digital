@@ -48,28 +48,29 @@ header > nav > a{
 
 .supaluna{
     width: 100%;
+    display: flexbox;
     
 }
 .supaluna > img{
     width: 100%;
     height: auto;
+    display: flex;
 }
-/* Estilização geral do footer */
-footer {
+
+#ffooter {
     background-color: white;
     height: 400px;
 }
 
-/* Configuração do container principal */
-footer > nav {
-    display: flex; /* Ativa o Flexbox */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os itens */
+
+#ffooter > nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
-/* Estilização dos links dentro das divs */
-footer > nav > div > a {
+#ffooter > nav > div > a {
     background-color: #e8e8e8;
     display: flex;
     align-items: center;
@@ -78,23 +79,74 @@ footer > nav > div > a {
     height: 300px;
     width: 300px;
     text-decoration: none;
-    margin: 0; /* Removido margin para evitar desorganização */
+    margin: 0; 
     color: #265787;
     border-radius: 10px;
     margin-top: 50px;
+    font-family: open sans;
+}
+.livro:hover {
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    transform: scale(1.1);
 }
 
-/* Estilização das imagens dentro dos links */
-footer > nav > div > a > img {
-    width: 150px; /* Reduzido para caber melhor lado a lado */
+#ffooter > nav > div > a > img {
+    width: 150px; 
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
-/* Efeito de hover nos links */
+
 .livro:hover a {
     background-color: rgba(255, 255, 255, 0.267);
     transition: 0.4s;
     color: #ffffff;
     background-color: #6385a8;
+}
+
+#assista{
+    background-image: url(imagens/fundo.png);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+#assista > nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    
+}
+#assista > nav > div > div > a{
+    font-family: open sans;
+    
+}
+#organiza{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#assista > nav > div > div > a >img{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 30px;
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+#organiza{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#assista > nav > div > h1{
+    color: white;
+    font-family: open sans;
+    font-weight: bold;
+    display: flex;
+    margin-right: 650px;
+    font-size: 50px;
+    
 }
