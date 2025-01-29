@@ -150,3 +150,12 @@ header > nav > a{
     font-size: 50px;
     
 }
+#fim{
+    width: 100%;
+    display: flexbox;
+}
+#fim > img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
